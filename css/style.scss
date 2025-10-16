@@ -1,4 +1,4 @@
-// Variabili
+// -- VARIABILI --
 $primary-color: #3C0061;
 $secondary-color: #FCFCFF;
 $tertiary-color: #8C52FF;
@@ -8,12 +8,16 @@ $gray: #C1B8C6;
 $font-main: 'Raleway', sans-serif;
 $font-secondary: 'Koulen', sans-serif;
 
+// -- PARZIALI--
+
 body{
   background-color: $secondary-color;
   margin: 0;
   font-family: $font-main, sans-serif;
 }
 
+
+// -- NAVIGATION --
 .header {
   background-color: $secondary-color;
   position:fixed;
@@ -224,3 +228,4 @@ body{
     margin-top: 0;
   }
 }
+// -- NAVIGATION --
