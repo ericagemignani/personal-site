@@ -1,0 +1,106 @@
+// -- VARIABILI --
+$primary-color: #3C0061;
+$secondary-color: #FCFCFF;
+$tertiary-color: #8C52FF;
+$accent-color: #AFF64C;
+$main-font-color: #24003A;
+$gray: #C1B8C6;
+$font-main: 'Raleway', sans-serif;
+$font-secondary: 'Koulen', sans-serif;
+// -- VARIABILI --
+
+
+.p1 {
+    margin-top: 32px;
+}
+
+.p2 {
+    margin-top: 16px;
+}
+
+@media (min-width: 744px) {
+    .p1 {
+        margin-top: 44px;
+    }
+
+    .p2 {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .p1 {
+        margin-top: 56px;
+    }
+    .p2 {
+        margin-top: 40px;
+    }
+}
+
+// -- FORM --
+.content {
+    margin-left: 0;
+    padding: 0;
+}
+#modulo {
+    margin-top: 68px;
+    margin-left: 12px;
+    padding: 0;
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column;
+}
+
+#modulo ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+}
+
+#modulo ul li {
+    padding: 0;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+#modulo ul li label {
+    display: block;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+#modulo ul li input {
+    border: solid 1px $gray;
+    border-radius: 8px;
+    height: 40px;
+    width: 296px;
+    margin-bottom: 32px;
+}
+
+#modulo ul li textarea {
+    border: solid 1px $gray;
+    border-radius: 8px;
+    height: 152px;
+    width: 95%;
+    margin-bottom: 16px;
+    overflow: scroll;
+}
+
+#modulo ul li .disclaimer {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    float: right;
+    margin-right: 12px;
+}
+
+#modulo ul li button {
+    float: right;
+    margin-right: 12px;
+}
+
+// -- FORM --

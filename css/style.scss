@@ -1,3 +1,8 @@
+// -- PARZIALI--
+@import './contattami';
+// -- PARZIALI --
+
+
 // -- VARIABILI --
 $primary-color: #3C0061;
 $secondary-color: #FCFCFF;
@@ -7,14 +12,133 @@ $main-font-color: #24003A;
 $gray: #C1B8C6;
 $font-main: 'Raleway', sans-serif;
 $font-secondary: 'Koulen', sans-serif;
+// -- VARIABILI --
 
-// -- PARZIALI--
 
+// -- GENERALITÀ --
 body{
   background-color: $secondary-color;
   margin: 0;
   font-family: $font-main, sans-serif;
+  color: $main-font-color;
+  font-size: 16px;
+  font-weight: 300px;
 }
+
+main{
+    padding: 136px 12px 80px 12px;
+}
+
+h1 {
+    font-family: $font-secondary, sans-serif;
+    font-size: 64px;
+    color: $main-font-color;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: $font-secondary, sans-serif;
+    font-size: 32px;
+    color: $main-font-color;
+    font-weight: 400;
+    line-height: 80px;  
+}
+h3 {
+    font-family: $font-secondary, sans-serif;
+    font-size: 20px;
+    color: $main-font-color;
+    font-weight: 400;
+    line-height: 80px;  
+}
+
+.maiusc {
+    text-transform: uppercase;
+    color: $tertiary-color;
+    font-weight: 500;
+}
+
+@media (min-width: 744px) {
+    body {
+     font-size: 20px; 
+    }
+
+    main{
+     padding: 248px 32px 112px 32px;
+    }
+
+    h1 {
+     font-size: 92px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    body {
+     font-size: 24px;
+    }
+
+    main {
+        padding: 209px 64px 184px 64px;
+    }
+
+    h1 {
+     font-size: 104px;
+    }
+
+    h2 {
+      font-size: 64px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+  }    
+// -- GENERALITÀ --
+
+
+// -- CTA --  
+.primary-btn {
+  display: inline-flex;
+  background-color: $accent-color;
+  color: $primary-color;
+  border: none;
+  border-radius: 32px;
+  padding: 14px 24px;
+  font-family: $font-main;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(60, 0, 97, 0.20);
+}
+
+.primary-btn:hover {
+  background-color: #8CC53D;
+  color: $secondary-color;
+}
+
+@media (min-width: 744px) {
+  .primary-btn {
+    font-size: 16px;
+    padding: 18px 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .primary-btn {
+    font-size: 20px;
+    padding: 22px 40px;
+  }
+}
+// -- CTA --
 
 
 // -- NAVIGATION --
@@ -23,12 +147,14 @@ body{
   position:fixed;
   width: 100%;
   z-index: 1;
+  height: 112px;
+  transition: height 0.5s ease-out;
 }  
 
 .header .logo {
   float: left;
   text-decoration: none;
-  margin: 24px 0 52px 12px;
+  margin: 24px 0 4px 12px;
   }
 
 .header .menu {
@@ -36,6 +162,7 @@ body{
   max-height: 0;
   transition: max-height .2s ease-in;
   margin-left: 24px;
+  padding-top: 52px;
 }  
 
 .header ul {
@@ -54,7 +181,7 @@ body{
   font-size: 16px;
   font-weight: 500;
   text-shadow: 0px 2px 4px rgba(60, 0, 97, 0.10);
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease-in;
   cursor: pointer;
   padding-bottom: 48px;
 }
@@ -75,7 +202,7 @@ body{
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease-in;
   box-shadow: 0px 2px 4px rgba(60, 0, 97, 0.20)
 }
 
@@ -86,7 +213,7 @@ body{
 }
 
 .header .menu-icon {
-  padding: 48px 12px;
+  padding: 48px 12px 0 0;
   position: relative;
   float: right;
   cursor: pointer;
@@ -156,6 +283,7 @@ body{
 
 .header:has(.menu-btn:checked) {
   box-shadow: 10px 0px 4px rgba(60, 0, 97, 0.10);
+  height: 380px;
 }
 
 

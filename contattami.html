@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Homepage-Erica Gemignani UX/UI Designer</title>
+  <title>Contattami-Erica Gemignani UX/UI Designer</title>
 
   <link rel="stylesheet" href="dist/css/style.css">
 
@@ -26,7 +26,7 @@
     <a href="/index.html" class="logo">
       <picture>
       <source media="(min-width: 744px)" srcset="/immagini/logo_chiaro_grande.svg" alt="Logo di Erica Gemignani UX/UI Designer">  
-      <img src="/immagini/logo_chiaro_piccolo.svg" alt="Logo di Erica Gemignani UX/UI Designer"
+      <img src="/immagini/logo_chiaro_piccolo.svg" alt="Logo di Erica Gemignani UX/UI Designer">
     </picture>
     </a>
     <input class="menu-btn" id="menu-btn" type="checkbox">
@@ -38,8 +38,47 @@
         <li><a href="/portfolio.html">Portfolio</a></li>
         <li><a href="/cv.html">CV</a></li>
         <li><a href="/contattami.html" class="secondary-btn">Contattami</a></li>
-    </ul> 
-  </header> 
-  
+    </ul>
+  </header>
+ <main>
+  <h1>Contattami</h1>
+  <p class="p1">Hai un <span class="maiusc">progetto da realizzare</span> ?</p>
+  <p class="p2">Compila il form qui sotto, ti risponderò il prima possibile</p>
+
+  <section id="modulo">
+    <div class="content">
+      <form action="https://formspree.io/f/xvgwlblv" method="post">
+       <ul>
+        <li class="uno">
+          <label for="nome" class="form-label">Nome*</label>
+          <input type="text" name="nome" id="nome" class="testo" required>
+        </li>
+        <li class="due">
+          <label for="cognome" class="form-label">Cognome*</label>
+          <input type="text" name="cognome" id="cognome" class="testo" required>
+        </li>
+        <li class="tre">
+          <label for="email" class="form-label">Indirizzo e-mail*</label>
+          <input type="email" name="email" id="email" class="testo" required>
+        </li>
+        <li class="quattro">
+          <label for="numero" class="form-label">Numero di telefono</label>
+          <input type="testo" name="numero" id="numero" class="testo">
+        </li>
+        <li class="cinque">
+          <label for="testo" class="form-label">Messaggio*</label>
+          <textarea name="testo" id="testo"></textarea>
+        </li>
+        <li>
+          <p class="disclaimer">(*campo obbligatorio)</p>
+        </li>  
+        <li class="sei">
+          <button type="submit" class="primary-btn">Invia</button>
+        </li>  
+      </ul>
+     </form> 
+    </div>
+  </section>
+ </main>
 </body>
 </html>
