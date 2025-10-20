@@ -1,3 +1,7 @@
+.intestazione {
+  padding: 136px 12px 0 12px;
+}
+
 .p1 {
   margin-top: 32px;
 }
@@ -7,6 +11,9 @@
 }
 
 @media (min-width: 744px) {
+  .intestazione {
+    padding: 200px 32px 0 32px;
+  }
   .p1 {
     margin-top: 44px;
   }
@@ -15,6 +22,9 @@
   }
 }
 @media (min-width: 1280px) {
+  .intestazione {
+    padding: 200px 64px 0 64px;
+  }
   .p1 {
     margin-top: 56px;
   }
@@ -22,33 +32,22 @@
     margin-top: 40px;
   }
 }
-.content {
-  margin-left: 0;
-  padding: 0;
-}
-
-#modulo {
-  margin-top: 68px;
-  margin-left: 12px;
-  padding: 0;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
+#modulo .form-content {
+  padding: 68px 12px 80px 12px;
 }
 
 #modulo ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 #modulo ul li {
-  padding: 0;
-  width: 100%;
-  float: left;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
 }
 
@@ -63,29 +62,111 @@
   border-radius: 8px;
   height: 40px;
   width: 296px;
-  margin-bottom: 32px;
+  padding: 8px 12px;
+  box-sizing: border-box;
 }
 
 #modulo ul li textarea {
   border: solid 1px #C1B8C6;
   border-radius: 8px;
   height: 152px;
-  width: 95%;
+  width: 100%;
   margin-bottom: 16px;
-  overflow: scroll;
+  overflow: auto;
+  padding: 16px 12px;
+  box-sizing: border-box;
 }
 
-#modulo ul li .disclaimer {
+.disclaimer {
   font-size: 10px;
   font-weight: 500;
+  color: rgba(60, 0, 97, 0.7);
   margin-bottom: 12px;
-  float: right;
-  margin-right: 12px;
+  margin-top: 16px;
+  align-self: flex-end;
 }
 
-#modulo ul li button {
-  float: right;
-  margin-right: 12px;
+.form-button {
+  align-self: flex-end;
+}
+
+@media (min-width: 744px) {
+  #modulo .form-content {
+    padding: 96px 32px 0 32px;
+  }
+  #modulo ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 64px;
+         column-gap: 64px;
+    row-gap: 72px;
+    width: 100%;
+  }
+  #modulo ul li {
+    flex: 1 1 calc(50% - 2rem);
+  }
+  #modulo ul li .cinque {
+    flex: 1 1 100%;
+  }
+  #modulo ul li label {
+    padding-bottom: 12px;
+  }
+  #modulo ul li textarea {
+    max-width: 936px;
+  }
+  .disclaimer {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  #modulo .form-content {
+    padding: 128px 64px 184px 64px;
+  }
+  #modulo ul {
+    row-gap: 88px;
+  }
+  #modulo ul li input {
+    height: 48px;
+    width: 372px;
+  }
+  #modulo ul li label {
+    padding-bottom: 16px;
+  }
+  #modulo ul li textarea {
+    max-width: 1064px;
+  }
+  .disclaimer {
+    font-size: 16px;
+    margin-bottom: 24px;
+    margin-top: 40px;
+  }
+}
+#contatti {
+  background-color: #3C0061;
+  width: 100%;
+  margin-top: 88px;
+  margin-bottom: 100px;
+}
+
+#contatti .info-contatto {
+  padding: 24px 12px 44px 12px;
+  color: #FCFCFF;
+}
+
+#contatti .info-contatto .p3 {
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+#contatti .info-contatto .p5 {
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+#contatti .info-contatto i {
+  margin-right: 16px;
 }
 
 body {
@@ -97,46 +178,36 @@ body {
   font-weight: 300px;
 }
 
-main {
-  padding: 136px 12px 80px 12px;
-}
-
 h1 {
   font-family: "Koulen", sans-serif, sans-serif;
   font-size: 64px;
-  color: #24003A;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 125%;
 }
 
 h2 {
   font-family: "Koulen", sans-serif, sans-serif;
   font-size: 32px;
-  color: #24003A;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 125%;
 }
 
 h3 {
   font-family: "Koulen", sans-serif, sans-serif;
   font-size: 20px;
-  color: #24003A;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 125%;
 }
 
 .maiusc {
   text-transform: uppercase;
-  color: #8C52FF;
+  color: #7042CC;
   font-weight: 500;
 }
 
 @media (min-width: 744px) {
   body {
     font-size: 20px;
-  }
-  main {
-    padding: 248px 32px 112px 32px;
   }
   h1 {
     font-size: 92px;
@@ -151,9 +222,6 @@ h3 {
 @media (min-width: 1280px) {
   body {
     font-size: 24px;
-  }
-  main {
-    padding: 209px 64px 184px 64px;
   }
   h1 {
     font-size: 104px;
@@ -231,7 +299,7 @@ h3 {
 .header ul a {
   display: block;
   font-family: "Raleway", sans-serif, sans-serif;
-  color: #8C52FF;
+  color: #7042CC;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -247,7 +315,7 @@ h3 {
 .header .secondary-btn {
   display: inline-flex;
   background-color: #FCFCFF;
-  color: #8C52FF;
+  color: #7042CC;
   border: 2px solid #AFF64C;
   border-radius: 100px;
   padding: 14px 28px;
@@ -273,7 +341,7 @@ h3 {
 }
 
 .header .menu-icon .nav-icon {
-  background-color: #8C52FF;
+  background-color: #7042CC;
   display: block;
   width: 24px;
   height: 2.5px;
@@ -285,7 +353,7 @@ h3 {
 
 .header .menu-icon .nav-icon::before,
 .header .menu-icon .nav-icon::after {
-  background-color: #8C52FF;
+  background-color: #7042CC;
   content: "";
   border-radius: 2px;
   box-shadow: 0px 0px 4px rgba(60, 0, 97, 0.25);

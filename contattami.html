@@ -10,6 +10,8 @@
 
   <link rel="icon" href="/immagini/favicon.svg" type="image/svg">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 <!-- Font -->  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<!-- Font -->
 </head>
 
 <body>
@@ -40,13 +42,20 @@
         <li><a href="/contattami.html" class="secondary-btn">Contattami</a></li>
     </ul>
   </header>
- <main>
-  <h1>Contattami</h1>
-  <p class="p1">Hai un <span class="maiusc">progetto da realizzare</span> ?</p>
-  <p class="p2">Compila il form qui sotto, ti risponderò il prima possibile</p>
+  <!-- Navigation -->
 
+
+ <main>
+
+  <div class="intestazione">
+    <h1>Contattami</h1>
+    <p class="p1">Hai un <span class="maiusc">progetto da realizzare</span> ?</p>
+    <p class="p2">Compila il form qui sotto, ti risponderò il prima possibile</p>
+  </div>
+
+<!-- -- FORM -- -->  
   <section id="modulo">
-    <div class="content">
+    <div class="form-content">
       <form action="https://formspree.io/f/xvgwlblv" method="post">
        <ul>
         <li class="uno">
@@ -63,22 +72,33 @@
         </li>
         <li class="quattro">
           <label for="numero" class="form-label">Numero di telefono</label>
-          <input type="testo" name="numero" id="numero" class="testo">
+          <input type="text" name="numero" id="numero" class="testo">
         </li>
         <li class="cinque">
           <label for="testo" class="form-label">Messaggio*</label>
           <textarea name="testo" id="testo"></textarea>
         </li>
-        <li>
-          <p class="disclaimer">(*campo obbligatorio)</p>
-        </li>  
-        <li class="sei">
-          <button type="submit" class="primary-btn">Invia</button>
-        </li>  
       </ul>
+      <p class="disclaimer">(*campo obbligatorio)</p>
+      <button type="submit" id="submit-btn" class="primary-btn" class="form-btn">Invia</button>
      </form> 
     </div>
   </section>
+<!-- -- FORM -- -->
+
+  <section id="contatti">
+    <div class="info-contatto">
+      <h2>Contatti</h2>
+      <p class="p3">Vuoi instaurare un <span style="font-weight: 500;">rapporto professionale</span>?</p>
+      <p class="p4">Mi trovi qui:</p>
+      <div class="actual">
+        <p class="p5"><i class="bi bi-envelope"></i>ericagemignani.ux@gmail.com</p>
+        <p class="p6"><i class="bi bi-telephone"></i>+39 333 478 3705</p>
+      </div>
+    </div>
+  </section>
+
  </main>
+
 </body>
 </html>
