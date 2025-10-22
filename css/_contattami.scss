@@ -9,40 +9,40 @@ $font-main: 'Raleway', sans-serif;
 $font-secondary: 'Koulen', sans-serif;
 // -- VARIABILI --
 
-.intestazione {
+.cnt-intestazione {
     padding: 136px 12px 0 12px;
 }
-.p1 {
+.cnt-p1 {
     margin-top: 32px;
 }
 
-.p2 {
+.cnt-p2 {
     margin-top: 16px;
 }
 
 @media (min-width: 744px) {
-    .intestazione {
+    .cnt-intestazione {
         padding: 200px 32px 0 32px;
     }
 
-    .p1 {
+    .cnt-p1 {
         margin-top: 44px;
     }
 
-    .p2 {
+    .cnt-p2 {
         margin-top: 20px;
     }
 }
 
 @media (min-width: 1280px) {
-    .intestazione {
-        padding: 200px 64px 0 64px;
+    .cnt-intestazione {
+        padding: 248px 64px 0 64px;
     }
 
-    .p1 {
+    .cnt-p1 {
         margin-top: 56px;
     }
-    .p2 {
+    .cnt-p2 {
         margin-top: 40px;
     }
 }
@@ -197,12 +197,12 @@ $font-secondary: 'Koulen', sans-serif;
     margin: 0;
 }
 
-#contatti .info-contatto .p3 {
+#contatti .info-contatto .cnt-p3 {
     margin-top: 20px;
     margin-bottom: 16px;
 }
 
-#contatti .info-contatto .p4 {
+#contatti .info-contatto .cnt-p4 {
     margin: 0;
     padding: 0;
 }
@@ -233,7 +233,7 @@ $font-secondary: 'Koulen', sans-serif;
         padding: 40px 32px 52px 32px;
     }
 
-    #contatti .info-contatto .p3 {
+    #contatti .info-contatto .cnt-p3 {
         margin-top: 16px;
         margin-bottom: 20px;
     }
@@ -250,7 +250,7 @@ $font-secondary: 'Koulen', sans-serif;
         margin-bottom: 184px;
     }
 
-    #contatti .info-contatto .p3 {
+    #contatti .info-contatto .cnt-p3 {
         margin-top: 32px;
     }
 
