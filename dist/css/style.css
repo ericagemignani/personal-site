@@ -1,34 +1,34 @@
-.intestazione {
+.cnt-intestazione {
   padding: 136px 12px 0 12px;
 }
 
-.p1 {
+.cnt-p1 {
   margin-top: 32px;
 }
 
-.p2 {
+.cnt-p2 {
   margin-top: 16px;
 }
 
 @media (min-width: 744px) {
-  .intestazione {
+  .cnt-intestazione {
     padding: 200px 32px 0 32px;
   }
-  .p1 {
+  .cnt-p1 {
     margin-top: 44px;
   }
-  .p2 {
+  .cnt-p2 {
     margin-top: 20px;
   }
 }
 @media (min-width: 1280px) {
-  .intestazione {
-    padding: 200px 64px 0 64px;
+  .cnt-intestazione {
+    padding: 248px 64px 0 64px;
   }
-  .p1 {
+  .cnt-p1 {
     margin-top: 56px;
   }
-  .p2 {
+  .cnt-p2 {
     margin-top: 40px;
   }
 }
@@ -166,12 +166,12 @@
   margin: 0;
 }
 
-#contatti .info-contatto .p3 {
+#contatti .info-contatto .cnt-p3 {
   margin-top: 20px;
   margin-bottom: 16px;
 }
 
-#contatti .info-contatto .p4 {
+#contatti .info-contatto .cnt-p4 {
   margin: 0;
   padding: 0;
 }
@@ -200,7 +200,7 @@
   #contatti .info-contatto {
     padding: 40px 32px 52px 32px;
   }
-  #contatti .info-contatto .p3 {
+  #contatti .info-contatto .cnt-p3 {
     margin-top: 16px;
     margin-bottom: 20px;
   }
@@ -214,7 +214,7 @@
     margin-top: 200px;
     margin-bottom: 184px;
   }
-  #contatti .info-contatto .p3 {
+  #contatti .info-contatto .cnt-p3 {
     margin-top: 32px;
   }
   #contatti .info-contatto {
@@ -387,7 +387,7 @@ p {
   background-color: #FCFCFF;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   height: 112px;
   transition: height 0.5s ease-out;
 }
@@ -594,6 +594,8 @@ p {
   margin: 0;
   background-color: #3C0061;
   color: #FCFCFF;
+  position: relative;
+  z-index: 1;
 }
 
 #footer .footer-content {
@@ -666,4 +668,34 @@ p {
     display: flex;
     flex-direction: row;
   }
+}
+#cta-finale {
+  padding: 0;
+  margin: 160px 0 40px 0;
+}
+
+#cta-finale .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cta-finale p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#cta-finale a {
+  text-decoration: none;
+}
+
+#cta-finale .immagine {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/immagini/deco_finale_mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-bottom: -43px;
 }/*# sourceMappingURL=style.css.map */
