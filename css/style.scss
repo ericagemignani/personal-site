@@ -54,9 +54,8 @@ p {
 }
 
 .maiusc {
-    text-transform: uppercase;
     color: $tertiary-color;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @media (min-width: 744px) {
@@ -139,7 +138,7 @@ p {
   background-color: $secondary-color;
   position:fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   height: 112px;
   transition: height 0.5s ease-out;
 }  
@@ -357,6 +356,8 @@ p {
   margin: 0;
   background-color: $primary-color;
   color: $secondary-color;
+  position: relative;
+  z-index: 1;
 }
 
 #footer .footer-content {
@@ -436,3 +437,79 @@ p {
   }
 }
 // -- FOOTER --
+
+// -- CTA FINALE --
+#cta-finale {
+  margin: 116px 0;
+  padding: 32px 12px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDFDFF;
+  box-shadow: 0px 0px 4px rgba(24, 0, 39, 0.10);
+}
+
+#cta-finale .parliamone {
+  font-weight: 600;
+  font-size: 36px;
+  color: $tertiary-color;
+}
+
+#cta-finale .final-p {
+  font-size: 20px;
+  margin: 32px 0 24px 0;
+}
+
+#cta-finale a {
+  text-decoration: none;
+}
+
+#cta-finale i {
+  color: #A98EE0;
+  font-size: 28px;
+}
+
+@media (min-width: 744px) {
+  #cta-finale {
+  margin: 204px 0;
+  padding: 48px 32px;
+  column-gap: 156px;
+  }
+
+  #cta-finale .parliamone {
+    font-size: 56px;
+  }
+
+  #cta-finale .final-p {
+    font-size: 24px;
+    margin: 40px 0 32px 0;
+  }
+
+  #cta-finale i {
+    font-size: 116px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #cta-finale {
+  margin: 304px 0;
+  padding: 48px 64px;
+  column-gap: 332px;
+  }
+
+  #cta-finale .parliamone {
+    font-size: 72px;
+  }
+
+  #cta-finale .final-p {
+    font-size: 32px;
+    margin: 56px 0 32px 0;
+  }
+
+  #cta-finale i {
+    font-size: 172px;
+  }
+}
+// -- CTA FINALE --
