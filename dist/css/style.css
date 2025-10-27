@@ -785,6 +785,243 @@
     margin: 24px 0 56px 0;
   }
 }
+#b-intestazione {
+  padding: 136px 12px 0 12px;
+}
+
+#b-intestazione .b-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+  align-items: center;
+}
+
+#b-intro {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  padding: 0 12px;
+}
+
+#b-intro .b-p2 {
+  margin-top: 12px;
+  margin-bottom: 64px;
+}
+
+#b-intro .b-p3 {
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 744px) {
+  #b-intestazione {
+    padding: 200px 32px 0 32px;
+  }
+  #b-intestazione .b-down {
+    margin-top: 72px;
+  }
+  #b-intro {
+    margin-top: 32px;
+    margin-bottom: 92px;
+    padding: 0 32px;
+  }
+  #b-intro .b-p2 {
+    margin-bottom: 92px;
+    margin-top: 16px;
+  }
+  #b-intro .b-p3 {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  #b-intestazione {
+    padding: 248px 64px 0 64px;
+  }
+  #b-intestazione .b-down {
+    margin-top: -32px;
+  }
+  #b-intro {
+    margin-top: 64px;
+    margin-bottom: 144px;
+    padding: 0 64px;
+  }
+  #b-intro .b-p2 {
+    margin-bottom: 144px;
+    margin-top: 24px;
+  }
+  #b-intro .b-p3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+}
+#drop-down .b-link {
+  display: block;
+  margin-top: 24px;
+}
+
+#drop-down a {
+  color: #7042CC;
+  text-shadow: 0px 2px 4px rgba(60, 0, 97, 0.1);
+  font-size: 16px;
+}
+
+#drop-down a:hover {
+  color: #543199;
+}
+
+@media (min-width: 744px) {
+  #drop-down .b-link {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  #drop-down a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  #drop-down a {
+    font-size: 24px;
+  }
+}
+#b-risultato {
+  margin-top: 124px;
+  margin-bottom: 112px;
+  padding: 40px 12px 48px 12px;
+  background-color: #3C0061;
+  color: #FCFCFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#b-risultato .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+#b-risultato .result {
+  background-color: #E2D9F5;
+  color: #24003A;
+  border-radius: 4px;
+  padding: 32px 2px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+#b-risultato .maiusc-due {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#b-risultato .link {
+  text-align: center;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+
+#b-risultato a {
+  color: #AFF64C;
+  text-shadow: 0px 2px 10px rgba(253, 253, 255, 0.2);
+}
+
+#b-risultato a:hover {
+  color: #EFFDDB;
+}
+
+#b-risultato .b-link-desktop {
+  display: none;
+}
+
+@media (min-width: 744px) {
+  #b-risultato {
+    margin-top: 148px;
+    margin-bottom: 184px;
+    padding: 48px 32px 64px 32px;
+  }
+  #b-risultato .content {
+    margin-top: 68px;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  #b-risultato .result {
+    padding: 32px 2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  #b-risultato .maiusc-due {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #b-risultato .link {
+    text-align: center;
+    margin: 52px 0 0 0;
+    padding: 0;
+  }
+  #b-risultato .b-link-mobile {
+    display: none;
+  }
+  #b-risultato .b-link-desktop {
+    display: inline;
+  }
+}
+@media (min-width: 1280px) {
+  #b-risultato {
+    margin-top: 184px;
+    padding: 64px 64px 80px 64px;
+  }
+  #b-risultato .content {
+    margin-top: 88px;
+    -moz-column-gap: 56px;
+         column-gap: 56px;
+  }
+  #b-risultato .result {
+    padding: 40px 2px 32px 2px;
+    row-gap: 24px;
+  }
+  #b-risultato .link {
+    text-align: center;
+    margin: 72px 0 0 0;
+    padding: 0;
+  }
+}
+#b-conclusioni {
+  padding: 0 12px;
+}
+
+#b-conclusioni .b-p4 {
+  margin: 12px 0 32px 0;
+}
+
+#b-conclusioni .b-p5 {
+  font-size: 12px;
+}
+
+@media (min-width: 744px) {
+  #b-conclusioni {
+    padding: 0 32px;
+  }
+  #b-conclusioni .b-p4 {
+    margin-top: 16px;
+  }
+  #b-conclusioni .b-p5 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  #b-conclusioni {
+    padding: 0 64px;
+  }
+  #b-conclusioni .b-p4 {
+    margin: 24px 0 56px 0;
+  }
+}
 body {
   background-color: #FCFCFF;
   margin: 0;
@@ -891,7 +1128,7 @@ p {
   background-color: #FCFCFF;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 9999;
   height: 88px;
   transition: height 0.5s ease-out;
 }

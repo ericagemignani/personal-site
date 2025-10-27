@@ -2,6 +2,7 @@
 @import './contattami' ;
 @import './portfolio' ;
 @import './hotel-pomelia';
+@import './buddhify';
 // -- PARZIALI --
 
 
@@ -140,7 +141,7 @@ p {
   background-color: $secondary-color;
   position:fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 9999;
   height: 88px;
   transition: height 0.5s ease-out;
 }  
