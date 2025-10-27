@@ -22,8 +22,8 @@ $font-secondary: 'Koulen', sans-serif;
 }
 
 #hp-intro {
-    margin-top: 16px;
-    margin-bottom: 36px;
+    margin-top: 32px;
+    margin-bottom: 64px;
     padding: 0 12px;
 }
 
@@ -34,40 +34,110 @@ $font-secondary: 'Koulen', sans-serif;
 
 #hp-intro .hp-p3 {
     margin-top: 12px;
-    margin-bottom: 64px;
+}
+
+@media (min-width: 744px) {
+    #hp-intestazione {
+    padding: 200px 32px 0 32px;
+    }
+
+    #hp-intestazione .hp-down {
+        margin-top: 72px;
+    }
+
+    #hp-intro {
+        margin-top: 32px;
+        margin-bottom: 92px;
+        padding: 0 32px;
+    }
+
+    #hp-intro .hp-p2 {
+        margin-bottom: 92px;
+        margin-top: 16px;
+    }
+
+    #hp-intro .hp-p3 {
+        margin-top: 16px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    #hp-intestazione {
+    padding: 248px 64px 0 64px;
+    }
+
+    #hp-intestazione .hp-down {
+        margin-top: 56px;
+    }
+
+    #hp-intro {
+        margin-top: 64px;
+        margin-bottom: 144px;
+        padding: 0 64px;
+    }
+
+    #hp-intro .hp-p2 {
+        margin-bottom: 144px;
+        margin-top: 24px;
+    }
+
+    #hp-intro .hp-p3 {
+        margin-top: 24px;
+    }
+
+}
+
+// -- ACCORDION --
+#drop-down {
+    padding: 0 12px;
+    margin-top: 36px;
+}
+
+#drop-down h2 {
+    margin-bottom: 36px;
 }
 
 .accordion {
-    padding: 0 12px;
+    padding: 0;
+    margin: 0;
 }
 
 .accordion-item {
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .accordion .accordion-item .accordion-button {
+    background-color: $secondary-color;
     font-family: $font-main;
     font-weight: 600;
     font-size: 16px;
     color: $main-font-color;
     box-shadow: none;
     border-bottom: 1px solid $gray;
-    padding: 48px 0 16px 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .accordion .accordion-item .accordion-button:not(.collapsed) {
     background-color: $secondary-color;
     box-shadow: none;
     border-bottom: 1px solid $gray;
-    padding: 48px 0 16px 0;
     font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .accordion .accordion-item .accordion-body {
+    background-color: $secondary-color;
     font-family: $font-main;
     font-size: 16px;
     color: $main-font-color;
-    padding: 20px 0 0 0;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .accordion-button::after {
@@ -82,6 +152,67 @@ $font-secondary: 'Koulen', sans-serif;
      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23543199' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
+.accordion-item {
+  border: none;
+  border-radius: 0 !important;
+
+  .accordion-button {
+    border-radius: 0 !important;
+  }
+
+  .accordion-collapse {
+    border-radius: 0 !important;
+  }
+}
+
+@media (min-width: 744px) {
+    #drop-down {
+        padding: 0 32px;
+        margin-top: 92px;
+        }
+
+    #drop-down h2 {
+        margin-bottom: 48px;
+    }
+
+    .accordion .accordion-item .accordion-button {
+        font-size: 20px;
+    }
+
+    .accordion .accordion-item .accordion-button:not(.collapsed) {
+        font-size: 20px;
+    }
+
+    .accordion .accordion-item .accordion-body {
+        font-size: 20px;
+        padding-top: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #drop-down {
+        padding: 0 64px;
+        margin-top: 144px;
+        }
+
+    #drop-down h2 {
+        margin-bottom: 56px;
+    }
+
+    .accordion .accordion-item .accordion-button {
+        font-size: 24px;
+    }
+
+    .accordion .accordion-item .accordion-button:not(.collapsed) {
+        font-size: 24px;
+    }
+
+    .accordion .accordion-item .accordion-body {
+        font-size: 24px;
+    }
+}
+// -- ACCORDION --
+
 .link {
     margin: 62px 12px 112px 12px;
 }
@@ -89,8 +220,65 @@ $font-secondary: 'Koulen', sans-serif;
 .link a {
     color: $tertiary-color;
     text-shadow: 0px 2px 4px rgba(60, 0, 97, 0.10);
+    font-size: 16px;
 }
 
 .link a:hover {
     color: #543199;
+}
+
+@media (min-width:744px){
+    .link {
+        margin: 48px 32px 148px 32px;
+        }
+
+    .link a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1280px){
+    .link {
+        margin: 104px 64px 208px 64px;
+        }
+
+    .link a {
+        font-size: 24px;
+    }
+}
+
+#hp-conclusioni {
+    padding: 0 12px;
+}
+
+#hp-conclusioni .hp-p4 {
+    margin: 12px 0 32px 0;
+}
+
+#hp-conclusioni .hp-p5 {
+    font-size: 12px;
+}
+
+@media (min-width: 744px) {
+    #hp-conclusioni {
+        padding: 0 32px;
+    }
+
+    #hp-conclusioni .hp-p4 {
+        margin-top: 16px;
+    }
+
+    #hp-conclusioni .hp-p5 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #hp-conclusioni {
+        padding: 0 64px;
+    }
+
+    #hp-conclusioni .hp-p4 {
+        margin: 24px 0 56px 0;
+    }
 }
