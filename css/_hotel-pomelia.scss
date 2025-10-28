@@ -17,12 +17,19 @@ $font-secondary: 'Koulen', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 48px;
-    align-items: center;
+    margin-top: 24px;
+    align-items: flex-end;
+    border-bottom: solid 1px $gray;
+    padding-bottom: 12px;
+}
+
+#hp-intestazione .hp-p1 {
+    padding-right: 12px;
+    font-style: italic;
 }
 
 #hp-intro {
-    margin-top: 32px;
+    margin-top: 72px;
     margin-bottom: 64px;
     padding: 0 12px;
 }
@@ -42,11 +49,15 @@ $font-secondary: 'Koulen', sans-serif;
     }
 
     #hp-intestazione .hp-down {
-        margin-top: 72px;
+        margin-top: 40px;
+    }
+
+    #b-intestazione .b-p1 {
+        padding-right: 24px;
     }
 
     #hp-intro {
-        margin-top: 32px;
+        margin-top: 104px;
         margin-bottom: 92px;
         padding: 0 32px;
     }
@@ -64,15 +75,19 @@ $font-secondary: 'Koulen', sans-serif;
 
 @media (min-width: 1280px) {
     #hp-intestazione {
-    padding: 248px 64px 0 64px;
+    padding: 200px 64px 0 64px;
     }
 
     #hp-intestazione .hp-down {
-        margin-top: 56px;
+        margin-top: 0;
+    }
+
+    #b-intestazione .b-p1 {
+        padding-right: 32px;
     }
 
     #hp-intro {
-        margin-top: 64px;
+        margin-top: 136px;
         margin-bottom: 144px;
         padding: 0 64px;
     }
