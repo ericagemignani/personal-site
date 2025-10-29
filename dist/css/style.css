@@ -632,7 +632,7 @@
 }
 
 #drop-down h2 {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .accordion {
@@ -910,23 +910,29 @@
     font-size: 24px;
   }
 }
+.ris-h2 {
+  padding: 0 12px;
+  margin-top: 88px;
+  margin-bottom: 24px;
+}
+
 #b-risultato {
-  margin-top: 124px;
   margin-bottom: 112px;
-  padding: 40px 12px 48px 12px;
-  background-color: #3C0061;
-  color: #FCFCFF;
+  padding: 0 12px 48px 12px;
+  background: linear-gradient(180deg, #FCFCFF 0%, #A98DE1 37%, #7042CC 59%, #3C0061 87%);
+  color: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 #b-risultato .content {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 32px;
   margin-top: 48px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #b-risultato .result {
@@ -937,6 +943,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  text-align: center;
+  max-width: 294px;
 }
 
 #b-risultato .maiusc-due {
@@ -964,22 +972,24 @@
 }
 
 @media (min-width: 744px) {
-  #b-risultato {
-    margin-top: 148px;
-    margin-bottom: 184px;
-    padding: 48px 32px 64px 32px;
+  .ris-h2 {
+    padding: 0 32px;
+    margin-top: 124px;
+    margin-bottom: 32px;
   }
   #b-risultato .content {
     margin-top: 68px;
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 48px;
+         column-gap: 48px;
   }
   #b-risultato .result {
     padding: 32px 2px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    max-width: 332px;
   }
   #b-risultato .maiusc-due {
     text-transform: uppercase;
@@ -998,22 +1008,27 @@
   }
 }
 @media (min-width: 1280px) {
+  .ris-h2 {
+    padding: 0 64px;
+    margin-top: 176px;
+    margin-bottom: 56px;
+  }
   #b-risultato {
-    margin-top: 184px;
-    padding: 64px 64px 80px 64px;
+    padding-bottom: 64px;
   }
   #b-risultato .content {
     margin-top: 88px;
-    -moz-column-gap: 56px;
-         column-gap: 56px;
+    -moz-column-gap: 64px;
+         column-gap: 64px;
   }
   #b-risultato .result {
     padding: 40px 2px 32px 2px;
-    row-gap: 24px;
+    row-gap: 32px;
+    max-width: 745px;
   }
   #b-risultato .link {
     text-align: center;
-    margin: 72px 0 0 0;
+    margin: 80px 0 0 0;
     padding: 0;
   }
 }
