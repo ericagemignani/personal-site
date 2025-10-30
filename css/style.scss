@@ -141,6 +141,8 @@ p {
 .header {
   background-color: $secondary-color;
   position:fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 9999;
   height: 88px;
@@ -289,7 +291,7 @@ p {
     align-items: center;
     justify-content: space-between;
     box-shadow: 10px 0px 4px rgba(60, 0, 97, 0.10);
-    height: 112px;
+    height: 88px;
   }
 
   .header ul {
@@ -497,7 +499,7 @@ p {
 
 @media (min-width: 1280px) {
   #cta-finale {
-  margin: 288px 0;
+  margin: 248px 0;
   padding: 48px 64px;
   column-gap: 332px;
   }

@@ -187,7 +187,7 @@ $font-secondary: 'Koulen', sans-serif;
 #contatti {
     background-color: $primary-color;
     width: 100%;
-    margin-top: 88px;
+    margin-top: 96px;
     margin-bottom: 100px;
     color: $secondary-color;
 }
@@ -225,7 +225,7 @@ $font-secondary: 'Koulen', sans-serif;
 
 @media (min-width: 744px) {
     #contatti {
-        margin-top: 180px;
+        margin-top: 156px;
         margin-bottom: 112px;
     }
 
@@ -272,7 +272,7 @@ $font-secondary: 'Koulen', sans-serif;
 
 // -- SOCIAL --
 #social {
-    margin: 0 12px 80px 12px;
+    margin: 0 12px 100px 12px;
     background-color: $tertiary-color;
     color: $secondary-color;
     border-radius: 16px;

@@ -145,7 +145,7 @@ $font-secondary: 'Koulen', sans-serif;
 .ris-h2 {
     padding: 0 12px;
     margin-top: 88px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 #b-risultato {
@@ -207,11 +207,10 @@ $font-secondary: 'Koulen', sans-serif;
     .ris-h2 {
         padding: 0 32px;
         margin-top: 124px;
-        margin-bottom: 32px;
+        margin-bottom: 56px;
     }
 
     #b-risultato .content {
-        margin-top: 68px;
         flex-direction: row;
         justify-content: center;
         column-gap: 48px;
@@ -223,11 +222,6 @@ $font-secondary: 'Koulen', sans-serif;
         flex-direction: column;
         row-gap: 16px;
         max-width: 332px;
-    }
-
-    #b-risultato .maiusc-due {
-        text-transform: uppercase;
-        font-weight: 600;
     }
 
     #b-risultato .link {
@@ -249,11 +243,12 @@ $font-secondary: 'Koulen', sans-serif;
     .ris-h2 {
         padding: 0 64px;
         margin-top: 176px;
-        margin-bottom: 56px;
+        margin-bottom: 72px;
     }
 
     #b-risultato{
         padding-bottom: 64px;
+        margin-bottom: 184px;
     }
 
     #b-risultato .content {
