@@ -1,0 +1,51 @@
+// -- VARIABILI --
+$primary-color: #3C0061;
+$secondary-color: #FCFCFF;
+$tertiary-color: #7042CC;
+$accent-color: #AFF64C;
+$main-font-color: #24003A;
+$gray: #C1B8C6;
+$font-main: 'Raleway', sans-serif;
+$font-secondary: 'Koulen', sans-serif;
+// -- VARIABILI --
+
+
+#hero {
+    background-image: url('/immagini/bg_hero_mobile.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 136px 0 28px 12px;
+}
+
+.hero-border {
+    height: 40px;
+    width: 100%;
+    margin-top:0;
+    margin-bottom: 100px;
+    background: linear-gradient(0deg, #FCFCFF 0%, #D3C5F0 34%, #A98DE1 56%, #7042CC 85%);
+}
+    
+#hero h2 {
+    margin-top: 36px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+#hero p {
+    margin-bottom: 32px;
+    max-width: 45%;
+}
+
+#hero a {
+    text-decoration: none;
+}
+
+
+
+#drop-down .h2-home {
+    margin-bottom: 8px;
+}
+
+#drop-down p {
+    margin-bottom: 32px;
+}
